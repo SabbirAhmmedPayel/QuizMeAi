@@ -1,0 +1,18 @@
+# FastAPI and Web Server
+fastapi
+uvicorn[standard]
+
+# AI and LangChain
+langchain
+langchain-google-genai
+langchain-community
+
+# Document Processing
+pypdf
+faiss-cpu
+tiktoken
+
+# Utilities
+python-dotenv
+pydantic
+python multi-part
