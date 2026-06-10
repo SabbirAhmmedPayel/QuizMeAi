@@ -1,37 +1,65 @@
-# QuizMe: PDF-Powered Study Assistant
+# 📚 PDF Intelligent Q&A System
 
-QuizMe is an intelligent web application that turns your PDF documents into interactive study materials. Upload any PDF and instantly generate summaries, flashcards, and practice quizzes.
+An intelligent document processing system that allows you to upload PDFs and ask natural language questions about their content using local AI models. Built with FastAPI, LangChain, and Ollama for complete privacy and offline operation.
 
-## Features
-- **PDF Intelligence**: Ask questions directly about your document content.
-- **Automated Study Tools**: Generate custom flashcards, MCQs, and short-answer questions.
-- **Smart Summarization**: Get concise, context-aware summaries of long documents.
+## ✨ Features
 
-## Tech Stack
-- **Backend**: FastAPI (Python)
-- **Frontend**: React (TypeScript/JavaScript)
-- **AI/LLM Pipeline**: LangChain
-- **Vector Database**: FAISS (for document retrieval)
+- 📄 **PDF Upload & Processing** - Upload any PDF document for instant indexing
+- 🤖 **Local AI Integration** - Uses Ollama to run Qwen 2.5 Coder 7B locally (no API keys needed!)
+- 💬 **Natural Language Q&A** - Ask questions in plain English and get accurate answers
+- 📊 **Smart Document Retrieval** - RAG (Retrieval-Augmented Generation) with MMR for relevant context
+- 📝 **Auto-Generated Quizzes** - Create multiple-choice questions from any document
+- 📖 **Document Summarization** - Generate summaries at low, medium, or high detail levels
+- 🔒 **100% Private** - All processing happens on your machine
 
-## Getting Started
+## 🖼️ Project Screenshots
+
+### Upload Interface
+![Upload Interface](images/s.png)
+
+*Upload your PDF documents for processing*
+
+### Ask Questions
+![Question Answering](images/s2.png)
+
+*Ask natural language questions about your document*
+
+### Quiz Generation
+![Quiz Generation](images/s3.png)
+
+*Automatically generate quizzes from document content*
+
+### Summarization
+![Document Summarization](images/s4.png)
+
+*Get summaries at different detail levels*
+
+### Model Selection
+![Model Management](images/s5.png)
+
+*Choose from multiple local AI models*
+
+### System Architecture
+![System Overview](images/s6.png)
+
+*Complete system architecture diagram*
+
+## 🏗️ Architecture
+
+
+
+## 🚀 Quick Start
 
 ### Prerequisites
-- Python 3.10+
-- Node.js & npm
-- OpenAI API Key
 
-### Backend Setup
-1. `cd backend`
-2. Create a virtual environment: `python -m venv venv`
-3. Activate: `source venv/bin/activate` (Linux/macOS) or `venv\Scripts\activate` (Windows)
-4. `pip install -r requirements.txt`
-5. Create a `.env` file and add: `OPENAI_API_KEY=your_key_here`
-6. `uvicorn main:app --reload`
+- Python 3.11+
+- [Ollama](https://ollama.com/) installed
+- 8GB+ RAM (16GB recommended)
+- NVIDIA GPU (optional, for faster inference)
 
-### Frontend Setup
-1. `cd frontend`
-2. `npm install`
-3. `npm run dev`
+### Installation
 
-## License
-MIT
+1. **Clone the repository**
+```bash
+git clone <your-repo-url>
+cd langchain/backend
